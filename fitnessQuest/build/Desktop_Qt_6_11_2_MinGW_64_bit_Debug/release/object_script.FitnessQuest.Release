@@ -1,6 +1,5 @@
-release/Achievements.o
 release/main.o
-release/CyclingExersice.o
+release/CyclingExercise.o
 release/Runningexercise.o
 release/WalkingExercise.o
 release/mainwindow.o

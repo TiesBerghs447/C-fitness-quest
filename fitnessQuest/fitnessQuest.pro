@@ -26,7 +26,7 @@ INCLUDEPATH += \
 
 SOURCES += \
     main.cpp \
-    src/exercises/CyclingExersice.cpp \
+    src/exercises/CyclingExercise.cpp \
     src/exercises/Runningexercise.cpp \
     src/exercises/WalkingExercise.cpp \
     src/ui/mainwindow.cpp \
@@ -40,7 +40,7 @@ SOURCES += \
 # =========================
 
 HEADERS += \
-    src/exercises/CyclingExersice.h \
+    src/exercises/CyclingExercise.h \
     src/exercises/Runningexercise.h \
     src/exercises/WalkingExercise.h \
     src/ui/mainwindow.h \

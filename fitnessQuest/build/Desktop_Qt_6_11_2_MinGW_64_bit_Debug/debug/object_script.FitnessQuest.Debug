@@ -1,6 +1,5 @@
-debug/Achievements.o
 debug/main.o
-debug/CyclingExersice.o
+debug/CyclingExercise.o
 debug/Runningexercise.o
 debug/WalkingExercise.o
 debug/mainwindow.o
