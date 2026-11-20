@@ -26,9 +26,10 @@ INCLUDEPATH += \
 
 SOURCES += \
     main.cpp \
-    src/exercises/CyclingExercise.cpp \
-    src/exercises/Runningexercise.cpp \
-    src/exercises/WalkingExercise.cpp \
+    src/exercises/CardioExercise.cpp \
+    src/exercises/StrengtExercise.cpp \
+    src/models/ExerciseDatabase.cpp \
+    src/models/ExerciseDefinition.cpp \
     src/ui/mainwindow.cpp \
     src/models/User.cpp \
     src/models/Workout.cpp \
@@ -40,9 +41,13 @@ SOURCES += \
 # =========================
 
 HEADERS += \
-    src/exercises/CyclingExercise.h \
-    src/exercises/Runningexercise.h \
-    src/exercises/WalkingExercise.h \
+    src/exercises/CardioExercise.h \
+    src/exercises/StrengtExercise.h \
+    src/models/ExerciseCategory.h \
+    src/models/ExerciseDatabase.h \
+    src/models/ExerciseDefinition.h \
+    src/models/Muscle.h \
+    src/models/MuscleGroup.h \
     src/ui/mainwindow.h \
     src/models/User.h \
     src/models/Workout.h \

@@ -3,16 +3,18 @@
 
 #include <vector>
 #include <memory>
+#include <string>
 
-#include "../exercises/Exercise.h"
+class Exercise;
 
 class Workout
 {
 private:
     std::vector<std::shared_ptr<Exercise>> exercises;
+    std::string date;
 
 public:
-    Workout();
+    Workout(const std::string& date);
 
     void addExercise(std::shared_ptr<Exercise> exercise);
 
@@ -21,6 +23,8 @@ public:
     int getTotalXP() const;
 
     int getExerciseCount() const;
+
+    std::string getDate() const;
 };
 
 #endif // WORKOUT_H

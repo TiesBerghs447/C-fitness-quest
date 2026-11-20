@@ -1,6 +1,8 @@
 #include "Workout.h"
+#include "../exercises/Exercise.h"
 
-Workout::Workout()
+Workout::Workout(const std::string& date)
+    : date(date)
 {
 }
 
@@ -13,7 +15,7 @@ double Workout::getTotalCalories() const
 {
     double total = 0;
 
-    for(const auto& exercise : exercises)
+    for (const auto& exercise : exercises)
     {
         total += exercise->calculateCalories();
     }
@@ -25,7 +27,7 @@ int Workout::getTotalXP() const
 {
     int total = 0;
 
-    for(const auto& exercise : exercises)
+    for (const auto& exercise : exercises)
     {
         total += exercise->calculateXP();
     }
@@ -35,5 +37,10 @@ int Workout::getTotalXP() const
 
 int Workout::getExerciseCount() const
 {
-    return exercises.size();
+    return static_cast<int>(exercises.size());
+}
+
+std::string Workout::getDate() const
+{
+    return date;
 }
