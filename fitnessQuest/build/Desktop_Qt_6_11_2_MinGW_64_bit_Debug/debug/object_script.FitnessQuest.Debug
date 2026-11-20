@@ -1,0 +1,12 @@
+debug/Achievements.o
+debug/main.o
+debug/CyclingExersice.o
+debug/Runningexercise.o
+debug/WalkingExercise.o
+debug/mainwindow.o
+debug/User.o
+debug/Workout.o
+debug/Statistics.o
+debug/Exercise.o
+debug/Achievements.o
+debug/moc_mainwindow.o

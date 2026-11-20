@@ -1,0 +1,12 @@
+release/Achievements.o
+release/main.o
+release/CyclingExersice.o
+release/Runningexercise.o
+release/WalkingExercise.o
+release/mainwindow.o
+release/User.o
+release/Workout.o
+release/Statistics.o
+release/Exercise.o
+release/Achievements.o
+release/moc_mainwindow.o
