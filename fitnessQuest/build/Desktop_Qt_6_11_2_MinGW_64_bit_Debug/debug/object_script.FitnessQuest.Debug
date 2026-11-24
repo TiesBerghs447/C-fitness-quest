@@ -1,7 +1,8 @@
 debug/main.o
-debug/CyclingExercise.o
-debug/Runningexercise.o
-debug/WalkingExercise.o
+debug/CardioExercise.o
+debug/StrengthExercise.o
+debug/ExerciseDatabase.o
+debug/ExerciseDefinition.o
 debug/mainwindow.o
 debug/User.o
 debug/Workout.o

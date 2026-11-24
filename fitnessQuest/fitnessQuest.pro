@@ -27,7 +27,7 @@ INCLUDEPATH += \
 SOURCES += \
     main.cpp \
     src/exercises/CardioExercise.cpp \
-    src/exercises/StrengtExercise.cpp \
+    src/exercises/StrengthExercise.cpp \
     src/models/ExerciseDatabase.cpp \
     src/models/ExerciseDefinition.cpp \
     src/ui/mainwindow.cpp \
@@ -42,7 +42,7 @@ SOURCES += \
 
 HEADERS += \
     src/exercises/CardioExercise.h \
-    src/exercises/StrengtExercise.h \
+    src/exercises/StrengthExercise.h \
     src/models/ExerciseCategory.h \
     src/models/ExerciseDatabase.h \
     src/models/ExerciseDefinition.h \

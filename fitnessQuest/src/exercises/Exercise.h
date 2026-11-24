@@ -1,8 +1,6 @@
 #ifndef EXERCISES_H
 #define EXERCISES_H
 
-#pragma once
-
 #include <string>
 
 class Exercise

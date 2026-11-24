@@ -1,3 +1,3 @@
-#include "StrengtExercise.h"
+#include "StrengthExercise.h"
 
 StrengtExercise::StrengtExercise() {}

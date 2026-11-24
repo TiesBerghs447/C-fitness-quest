@@ -1,11 +1,17 @@
 #include "ExerciseDatabase.h"
+#include "ExerciseCategory.h"
+#include "ExerciseDefinition.h"
 
 ExerciseDefinition ExerciseDatabase::createBenchPress()
 {
     ExerciseDefinition exercise(
         "Bench Press",
+        ExerciseCategory::Chest,
         false,
-        0.0);
+        0.0,
+        true,
+        "barbell",
+        "discription for bench press");
 
     exercise.addMuscleActivation(
         Muscle::MiddleChest,
@@ -34,8 +40,12 @@ ExerciseDefinition ExerciseDatabase::createInclineBenchPress()
 {
     ExerciseDefinition exercise(
         "Incline Bench Press",
+        ExerciseCategory::Chest,
         false,
-        0.0);
+        0.0,
+        true,
+        "barbell",
+        "discriprion for incline bench");
 
     exercise.addMuscleActivation(
         Muscle::UpperChest,
@@ -55,7 +65,7 @@ ExerciseDefinition ExerciseDatabase::createInclineBenchPress()
 
     return exercise;
 }
-
+/*
 ExerciseDefinition ExerciseDatabase::createDeadlift()
 {
     ExerciseDefinition exercise(
@@ -145,16 +155,16 @@ ExerciseDefinition ExerciseDatabase::createPullUp()
 
     return exercise;
 }
-
+*/
 std::vector<ExerciseDefinition>
 ExerciseDatabase::getAllExercises()
 {
     return
         {
-            createBenchPress(),
+            createBenchPress()/*,
             createInclineBenchPress(),
             createDeadlift(),
             createSquat(),
-            createPullUp()
+            createPullUp()*/
         };
 }

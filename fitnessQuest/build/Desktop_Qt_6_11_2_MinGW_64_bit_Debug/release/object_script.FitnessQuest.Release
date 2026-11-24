@@ -1,7 +1,8 @@
 release/main.o
-release/CyclingExercise.o
-release/Runningexercise.o
-release/WalkingExercise.o
+release/CardioExercise.o
+release/StrengthExercise.o
+release/ExerciseDatabase.o
+release/ExerciseDefinition.o
 release/mainwindow.o
 release/User.o
 release/Workout.o
