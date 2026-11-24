@@ -1,6 +1,8 @@
 #include <QApplication>
+#include <QDebug>
 
 #include "mainwindow.h"
+#include "Set.h"
 
 int main(int argc, char *argv[])
 {
@@ -12,4 +14,3 @@ int main(int argc, char *argv[])
 
     app.exec();
 }
-

@@ -554,6 +554,7 @@ release/main.o: ../../main.cpp C:/Qt/6.11.2/mingw_64/include/QtWidgets/QApplicat
 		C:/Qt/6.11.2/mingw_64/include/QtGui/qinputmethod.h \
 		C:/Qt/6.11.2/mingw_64/include/QtCore/qlocale.h \
 		C:/Qt/6.11.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.11.2/mingw_64/include/QtCore/QDebug \
 		../../src/ui/mainwindow.h \
 		C:/Qt/6.11.2/mingw_64/include/QtWidgets/QMainWindow \
 		C:/Qt/6.11.2/mingw_64/include/QtWidgets/qmainwindow.h \
@@ -585,7 +586,8 @@ release/main.o: ../../main.cpp C:/Qt/6.11.2/mingw_64/include/QtWidgets/QApplicat
 		C:/Qt/6.11.2/mingw_64/include/QtCore/QSizeF \
 		C:/Qt/6.11.2/mingw_64/include/QtGui/QTransform \
 		C:/Qt/6.11.2/mingw_64/include/QtGui/qscreen_platform.h \
-		C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtabwidget.h
+		C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtabwidget.h \
+		../../src/models/Set.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\..\main.cpp
 
 release/CardioExercise.o: ../../src/exercises/CardioExercise.cpp ../../src/exercises/CardioExercise.h

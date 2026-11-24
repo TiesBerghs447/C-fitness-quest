@@ -23,9 +23,10 @@ Set::Set()
 // in de body. Zo worden ze meteen goed aangemaakt zonder eerst een dummy-waarde te krijgen.
 
 Set::Set(double weightKg, std::uint8_t reps, std::uint8_t rpe)
-    :weightKg(weightKg),reps(reps), rpe(rpe)
+    :weightKg(0),reps(reps), rpe(rpe)
 {
-
+    //op deze manier hoeven we maar een keer te controleren of het getal positief is.
+    setWeightKg(weightKg);
 }
 
 // Vereiste 3: useful and correct encapsulation (explain why)
@@ -74,8 +75,20 @@ void Set::setWeightKg(double weightKg)
 // te zetten, staat de formule op één plek en kan geen andere klasse hem anders uitrekenen.
 // bodyweightLoadKg is 0 voor bench press, maar bij een pull-up is dat het deel van je
 // lichaamsgewicht dat meetelt.
+
 double Set::getVolume(double bodyweightLoadKg) const
 {
     return (weightKg + bodyweightLoadKg) * reps;
+}
+
+// Vereiste 29: useful member function
+// getEstimated1RM() schat het maximale gewicht voor 1 herhaling met de Epley-formule:
+// (gewicht + extra lichaamsgewicht) x (1 + reps / 30). Zo kunnen sets met een verschillend
+// aantal reps met elkaar vergeleken worden (voor PR's en progressive overload).
+// De 30.0 heeft een komma: met 30 zou reps / 30 afgerond worden naar een geheel getal.
+
+double Set::getEstimated1RM(double bodyweightLoadKg) const
+{
+    return (weightKg + bodyweightLoadKg) * (1+reps/30.0);
 }
 }
