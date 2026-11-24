@@ -30,6 +30,7 @@ SOURCES += \
     src/exercises/StrengthExercise.cpp \
     src/models/ExerciseDatabase.cpp \
     src/models/ExerciseDefinition.cpp \
+    src/models/Set.cpp \
     src/ui/mainwindow.cpp \
     src/models/User.cpp \
     src/models/Workout.cpp \
@@ -48,6 +49,7 @@ HEADERS += \
     src/models/ExerciseDefinition.h \
     src/models/Muscle.h \
     src/models/MuscleGroup.h \
+    src/models/Set.h \
     src/ui/mainwindow.h \
     src/models/User.h \
     src/models/Workout.h \

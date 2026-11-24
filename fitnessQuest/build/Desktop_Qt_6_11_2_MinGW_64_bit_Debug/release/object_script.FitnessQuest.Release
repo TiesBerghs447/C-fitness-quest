@@ -3,6 +3,7 @@ release/CardioExercise.o
 release/StrengthExercise.o
 release/ExerciseDatabase.o
 release/ExerciseDefinition.o
+release/Set.o
 release/mainwindow.o
 release/User.o
 release/Workout.o

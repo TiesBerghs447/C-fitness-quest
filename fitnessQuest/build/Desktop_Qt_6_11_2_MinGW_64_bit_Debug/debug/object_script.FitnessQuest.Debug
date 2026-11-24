@@ -3,6 +3,7 @@ debug/CardioExercise.o
 debug/StrengthExercise.o
 debug/ExerciseDatabase.o
 debug/ExerciseDefinition.o
+debug/Set.o
 debug/mainwindow.o
 debug/User.o
 debug/Workout.o
