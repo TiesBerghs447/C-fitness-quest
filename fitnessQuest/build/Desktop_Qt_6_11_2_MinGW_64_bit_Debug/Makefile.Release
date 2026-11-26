@@ -827,7 +827,10 @@ release/Workout.o: ../../src/models/Workout.cpp ../../src/models/Workout.h \
 release/Statistics.o: ../../src/models/Statistics.cpp ../../src/models/statistics.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Statistics.o ..\..\src\models\Statistics.cpp
 
-release/Exercise.o: ../../src/exercises/Exercise.cpp ../../src/exercises/Exercise.h
+release/Exercise.o: ../../src/exercises/Exercise.cpp ../../src/exercises/Exercise.h \
+		../../src/models/ExerciseDefinition.h \
+		../../src/models/Muscle.h \
+		../../src/models/ExerciseCategory.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\Exercise.o ..\..\src\exercises\Exercise.cpp
 
 release/Achievements.o: ../../src/achievements/Achievements.cpp ../../src/achievements/Achievements.h

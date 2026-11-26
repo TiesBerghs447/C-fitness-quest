@@ -5,6 +5,8 @@
 #include <memory>
 #include <string>
 
+namespace fq
+{
 class Exercise;
 
 class Workout
@@ -26,5 +28,6 @@ public:
 
     std::string getDate() const;
 };
+}
 
 #endif // WORKOUT_H

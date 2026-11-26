@@ -2,6 +2,9 @@
 #include "ExerciseCategory.h"
 #include "ExerciseDefinition.h"
 
+namespace fq
+{
+
 ExerciseDefinition ExerciseDatabase::createBenchPress()
 {
     ExerciseDefinition exercise(
@@ -167,4 +170,5 @@ ExerciseDatabase::getAllExercises()
             createSquat(),
             createPullUp()*/
         };
+}
 }

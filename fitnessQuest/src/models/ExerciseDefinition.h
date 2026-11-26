@@ -7,6 +7,8 @@
 #include "Muscle.h"
 #include "ExerciseCategory.h"
 
+namespace fq
+{
 class ExerciseDefinition
 {
 private:
@@ -64,5 +66,6 @@ public:
 
     double getTotalActivation() const;
 };
+}
 
 #endif // EXERCISEDEFINITION_H

@@ -1,6 +1,8 @@
 #include "Workout.h"
 #include "../exercises/Exercise.h"
 
+namespace fq
+{
 Workout::Workout(const std::string& date)
     : date(date)
 {
@@ -43,4 +45,5 @@ int Workout::getExerciseCount() const
 std::string Workout::getDate() const
 {
     return date;
+}
 }

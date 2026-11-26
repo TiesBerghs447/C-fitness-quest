@@ -1,6 +1,8 @@
 #ifndef EXERCISECATEGORY_H
 #define EXERCISECATEGORY_H
 
+namespace fq
+{
 enum class ExerciseCategory
 {
     // Chest
@@ -36,5 +38,6 @@ enum class ExerciseCategory
     Swimming,
     OtherCardio
 };
+}
 
 #endif // EXERCISECATEGORY_H

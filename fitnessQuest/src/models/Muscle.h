@@ -1,6 +1,8 @@
 #ifndef MUSCLE_H
 #define MUSCLE_H
 
+namespace fq
+{
 enum class Muscle
 {
     // Chest
@@ -82,5 +84,5 @@ enum class Muscle
     NeckFlexors,
     NeckExtensors
 };
-
+}
 #endif // MUSCLE_H

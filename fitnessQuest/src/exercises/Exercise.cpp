@@ -1,7 +1,10 @@
 #include "Exercise.h"
+#include "ExerciseDefinition.h"
 
-Exercise::Exercise(const std::string& name, int durationMinutes)
-    : name(name),
+namespace fq
+{
+Exercise::Exercise(std::shared_ptr<const ExerciseDefinition> definition, int durationMinutes)
+    : definition(definition),
     durationMinutes(durationMinutes)
 {
 }
@@ -12,10 +15,11 @@ Exercise::~Exercise()
 
 std::string Exercise::getName() const
 {
-    return name;
+    return definition->getName();
 }
 
 int Exercise::getDurationMinutes() const
 {
     return durationMinutes;
+}
 }

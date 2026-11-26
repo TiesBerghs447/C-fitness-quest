@@ -1,16 +1,21 @@
-#ifndef EXERCISES_H
-#define EXERCISES_H
+#ifndef EXERCISE_H
+#define EXERCISE_H
 
 #include <string>
+#include <memory>
 
+namespace fq
+{
+
+class ExerciseDefinition;
 class Exercise
 {
 protected:
-    std::string name;
+    std::shared_ptr<const ExerciseDefinition> definition;
     int durationMinutes;
 
 public:
-    Exercise(const std::string& name, int durationMinutes);
+    Exercise(std::shared_ptr<const ExerciseDefinition> definition, int durationMinutes);
 
     virtual ~Exercise();
 
@@ -20,4 +25,6 @@ public:
     virtual double calculateCalories() const = 0;
     virtual int calculateXP() const = 0;
 };
-#endif // EXERCISES_H
+}
+
+#endif // EXERCISE_H

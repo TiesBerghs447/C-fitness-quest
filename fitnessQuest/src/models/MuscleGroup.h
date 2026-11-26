@@ -1,6 +1,8 @@
 #ifndef MUSCLEGROUP_H
 #define MUSCLEGROUP_H
 
+namespace fq
+{
 enum class MuscleGroup
 {
     Chest,
@@ -18,5 +20,6 @@ enum class MuscleGroup
     Abductors,
     Neck
 };
+}
 
 #endif // MUSCLEGROUP_H

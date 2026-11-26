@@ -5,6 +5,8 @@
 
 #include "ExerciseDefinition.h"
 
+namespace fq
+{
 class ExerciseDatabase
 {
 public:
@@ -21,5 +23,6 @@ public:
 
     static std::vector<ExerciseDefinition> getAllExercises();
 };
+}
 
 #endif // EXERCISEDATABASE_H

@@ -63,9 +63,11 @@ void Set::setWeightKg(double weightKg)
         //geeft een fout aan wie setWeightKg aanroept
         throw std::invalid_argument("Het gewicht mag niet negatief zijn");
     }
+
     // Vereiste 28: useful usage of "this" (if the code does not work without it)
     // De parameter heet net als het veld. Zonder this-> zou weightKg de parameter aan zichzelf
     // toewijzen en blijft het veld ongewijzigd.
+
     this->weightKg = weightKg;
 }
 

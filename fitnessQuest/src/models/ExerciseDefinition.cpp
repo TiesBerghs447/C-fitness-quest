@@ -1,5 +1,7 @@
 #include "ExerciseDefinition.h"
 
+namespace fq
+{
 ExerciseDefinition::ExerciseDefinition()
     : name(""),
     category(ExerciseCategory::Chest),
@@ -87,4 +89,5 @@ double ExerciseDefinition::getTotalActivation() const
     }
 
     return total;
+}
 }
