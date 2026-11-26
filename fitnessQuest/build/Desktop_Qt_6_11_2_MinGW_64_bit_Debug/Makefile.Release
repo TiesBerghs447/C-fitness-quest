@@ -593,7 +593,12 @@ release/main.o: ../../main.cpp C:/Qt/6.11.2/mingw_64/include/QtWidgets/QApplicat
 release/CardioExercise.o: ../../src/exercises/CardioExercise.cpp ../../src/exercises/CardioExercise.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\CardioExercise.o ..\..\src\exercises\CardioExercise.cpp
 
-release/StrengthExercise.o: ../../src/exercises/StrengthExercise.cpp ../../src/exercises/StrengthExercise.h
+release/StrengthExercise.o: ../../src/exercises/StrengthExercise.cpp ../../src/exercises/StrengthExercise.h \
+		../../src/exercises/Exercise.h \
+		../../src/models/Set.h \
+		../../src/models/ExerciseDefinition.h \
+		../../src/models/Muscle.h \
+		../../src/models/ExerciseCategory.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\StrengthExercise.o ..\..\src\exercises\StrengthExercise.cpp
 
 release/ExerciseDatabase.o: ../../src/models/ExerciseDatabase.cpp ../../src/models/ExerciseDatabase.h \

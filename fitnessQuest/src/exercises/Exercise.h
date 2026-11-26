@@ -43,7 +43,7 @@ public:
     // Vereiste 9: useful and correct virtual function
     // Elke afgeleide klasse rekent op zijn eigen manier. Pure virtual: de basis heeft geen implementatie.
     virtual double calculateCalories(double bodyWeightKg) const = 0;
-    virtual int calculateXP() const = 0;
+    virtual int calculateXP(double bodyWeightKg) const = 0;
 };
 }
 
